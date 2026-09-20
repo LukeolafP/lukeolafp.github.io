@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTok sign-in callback</title>
+<style>
+  body { margin:0; background:#f7f6f2; color:#16201f; font:16px/1.6 ui-sans-serif,system-ui,sans-serif; padding:64px 16px; }
+  @media (prefers-color-scheme: dark) { body { background:#121716; color:#e9ece8; } }
+  main { max-width:34rem; margin:0 auto; }
+  h1 { font-size:22px; margin:0 0 12px; }
+  code { word-break:break-all; font-size:13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sign-in received</h1>
+  <p>Copy the <strong>entire address</strong> from your browser's address bar and paste it back into the terminal.</p>
+  <p><code id="url"></code></p>
+  <script>document.getElementById('url').textContent = location.href;</script>
+</main>
+</body>
+</html>
